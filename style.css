@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: rgb(218, 197, 252); */
+  background-image: linear-gradient(
+    160deg,
+    rgb(218, 197, 252),
+    rgb(147, 244, 237)
+  );
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  height: 570px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.box img {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.box h1,
+p {
+  text-align: center;
+  width: 70%;
+}
+
+.container .box .icon {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(139, 223, 237);
+  justify-content: space-between;
+  border-radius: 12px;
+}
+.box .icon img {
+  height: 60px;
+  width: 60px;
+}
+.box .icon .left {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-left: 10px;
+}
+.icon .left .amount {
+  padding-top: 7px;
+}
+
+.box .icon .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right a {
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+}
+
+.box button {
+  border: 1px solid rgb(22, 22, 79);
+  width: 80%;
+  height: 7%;
+  background-color: rgb(22, 22, 79);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 5px 8px 2px rgb(70, 63, 63);
+}
+
+.Cancel a {
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
